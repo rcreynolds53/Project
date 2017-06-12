@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            select {display: inline-block; width:35%; font-weight: bold}
+            form {margin-left:30px}
+form label { display: inline-block; width: 155px; font-weight: bold}
+textarea {display: inline-block; width:33%}
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1><b><big>Papa Pitera's</big></b></h1>
+        </center><hr>
+        <a href="papa pitera's.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="ContactPPP.html">Contact Us</a>
+        <hr><br>
+        <form action="#" method="POST">
+            <div>
+                <label id="NameLabel" for="Name">Name:</label>
+                <input id="Name" name="Name" type="text" style="width:33%"/>
+            </div><br>
+            <div>
+                <label id="EmailLabel" for="Email">Email:</label>
+                <input id="Email" name="Email" type="text" style="width:33%"/>
+            </div><br>
+            <div>
+                <label id="PhoneLabel" for="Phone">Phone:</label>
+                <input id="Phone" name="Phone" type="text" style="width:33%"/>
+            </div><br>
+            <div>
+                <b>Reason for Inquiry:</b><select name="ReasonForInquiry" style="margin-left:18px">
+                    <option value="Catering">Catering (default)</option>
+                    <option value="PrivateParty">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                    </select>
+            </div><br>
+            <div>
+                <label id="AdditionalInfo" for="AdditionalInfo">Additional Information:</label>
+                <textarea id="Additional Information" name="message" type="text"></textarea>
+            </div><br>
+            <div>
+            <label id="CustomerLabel" for="Customer">Have you been to our restaurant?</label>
+            <input type="radio" name="answer" value="No"/>No
+            <input type="radio" name="answer" value="Yes"/>Yes
+            </div><br>
+            <div>
+                <label id="BestContactDays" for="ContactingCustomer">Best day to contact you:</label>
+                <input type="checkbox" name="CustomerContact" value="MTWTF">M  <input type="checkbox" name="CustomerContact" value="MTWTF">T  <input type="checkbox" name="CustomerContact" value="MTWTF">W  <input type="checkbox" name="CustomerContact" value="MTWTF">Th  <input type="checkbox" name="CustomerContact" value="MTWTF">F
+            </div><br>
+            <div>
+                <input type="submit" id="SendRequest" value="Send Request" style="margin-left:225px">
+            </div><br>
+        </form><hr>
+                <footer>
+                    <p align="center">3253 S. Pitera Dr. Port Orange, FL 32119<br>210-435-7766</p>
+                </footer>
+    </body>
+</html>
+        
