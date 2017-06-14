@@ -6,6 +6,7 @@
             table, th, td {border:1.5px solid black;border-collapse: collapse}
             table {width:100%;
             text-align:center}
+            #caption1 { text-decoration: underline; text-align: center}
         </style>
     </head>
     <body>
@@ -26,12 +27,16 @@
             <li>Mike Clink- Producer</li>
             </ul>
             <table>
-                <caption><h2>Track List</h2></caption>
-                <tr bgcolor="grey">
+                <div id="caption1">
+                    <caption><h2><u>Track Listing</u></h2></caption>
+                    </div>
+                <div id="tableheadings">
+                    <tr bgcolor="grey">
                     <th style="width:15%">Track #</th>
                     <th style="width:25%">Track Title</th>
                     <th style="width:60%">Track Length</th>
                 </tr>
+                </div>
                 <tr>
                     <td>1</td>
                     <td>Welcome to the Jungle</td>
