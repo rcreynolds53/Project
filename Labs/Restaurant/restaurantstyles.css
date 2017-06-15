@@ -1,0 +1,9 @@
+header {text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px}
+footer {text-align: center}
+a {padding-right: 10px;
+padding-left: 10px}
+ hr {border: 1px solid black;}
