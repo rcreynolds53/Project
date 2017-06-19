@@ -1,0 +1,13 @@
+Total Height= Top margin + top border + top padding + (content height) + bottom padding + bottom border + bottom margin 
+Total Width= Left margin + left border + left padding + (content width) + right padding + right border + right margin
+
+Calculations
+Height
+20px + 1px + 10px + 150px + 10px + 1px + 20px= 212px High 
+Width
+20px + 1px + left 10px + 400px + 10px + 1px + 20px= 462px Wide
+
+Browser Calculated Width: 422px 
+Browser Calculated Height: 172px
+
+Why don't they match? Browser is not calculating the margins, not sure why. Missing 40px for both height and width. 
