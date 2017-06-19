@@ -8,3 +8,6 @@ footer {text-align: center;
 a {padding-right: 10px;
 padding-left: 10px}
  hr {border: 1px solid black;}
+a:link {text-decoration: none; color: firebrick}
+a:visited {color: darkolivegreen;}
+a:hover {font-weight: bold;}
