@@ -5,8 +5,6 @@
         <style>
             table, th, td {border:1.5px solid black;border-collapse: collapse}
             td {font-style: italic}
-            table {width:100%;
-            text-align:center;}
             tr {background-color: burlywood}
             th {background-color: grey}
             #caption1 { text-decoration: underline; text-align: center}
@@ -21,9 +19,14 @@
         <link href="albumStyles.css"
             rel="stylesheet"
             type="text/css"/>
-            <div style="background: url(/Users/macbookpro/Documents/Project/Labs/Album/GNR.jpg) no-repeat center; height: 320px;">
+            <link href="/Users/macbookpro/Documents/Project/css/bootstrap.min.css"
+            rel="stylesheet"
+            type="text/css"/>
+            <!--<div style="background: url(/Users/macbookpro/Documents/Project/Labs/Album/GNR.jpg) no-repeat center; height: 320px;">
+            </div>-->
+            <div class="container">
+      <center><img src="/Users/macbookpro/Documents/Project/Labs/Album/GNR.jpg"/ class="img-circle"></center><br/>
             </div>
-       <!--<img src="/Users/macbookpro/Documents/Project/Images/GNR.jpg"/><br/>-->
         <center><b><big>Appetite For Destruction</big></b></center>
         <center><br><a href="http://www.gunsnroses.com/index/home" target= "_blank">Guns N' Roses</a></center><br>
         <center>July 21, 1987</center><hr style="border: 1px solid black">
@@ -40,9 +43,11 @@
             <li>Mike Clink- Producer</li>
             </ul>
             </div>
+            <div class="container-fluid">
+                <div class="table-responsive">
             <table>
                 <div>
-                    <caption>Tracks</caption>
+                    <caption style="text-align:center">Tracks</caption>
                     </div>
                 <div id="tableheadings">
                     <tr bgcolor="grey">
@@ -112,5 +117,7 @@
                     <td>6:13</td>
                 </tr>
             </table><br>
+                </div>
+            </div>
     </body>
 </html>
