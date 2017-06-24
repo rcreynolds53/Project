@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            select {display: inline-block; width:35%; font-weight: bold}
+            form {margin-left:30px}
+form label { display: inline-block; width: 155px; font-weight: bold}
+textarea {display: inline-block; width:33%}
+        </style>
+    </head>
+    <body>
+        <link href="restaurantstyles.css"
+        rel="stylesheet"
+        type="text/css"/>
+         <link href="/Users/macbookpro/Documents/Project/Fonts/GoodDog-fontfacekit (2)/web fonts/gooddog_regular_macroman/stylesheet.css"
+        rel="stylesheet"
+        type="text/css"/>
+        <header style="font-family: GoodDogregular;">Papa Pitera's</header><hr>
+        <a href="RestaurantV5.html">Home</a>
+        <a href="menuV5.html">Menu</a>
+        <a href="ContactPPPV5.html">Contact Us</a>
+        <hr><br>
+        <form action="#" method="POST">
+            <div>
+                <label id="NameLabel" for="Name">Name:</label>
+                <input id="Name" name="Name" type="text" style="width:33%"/>
+            </div><br>
+            <div>
+                <label id="EmailLabel" for="Email">Email:</label>
+                <input id="Email" name="Email" type="text" style="width:33%"/>
+            </div><br>
+            <div>
+                <label id="PhoneLabel" for="Phone">Phone:</label>
+                <input id="Phone" name="Phone" type="text" style="width:33%"/>
+            </div><br>
+            <div>
+                <b>Reason for Inquiry:</b><select name="ReasonForInquiry" style="margin-left:18px">
+                    <option value="Catering">Catering (default)</option>
+                    <option value="PrivateParty">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                    </select>
+            </div><br>
+            <div>
+                <label id="AdditionalInfo" for="AdditionalInfo">Additional Information:</label>
+                <textarea id="Additional Information" name="message" type="text"></textarea>
+            </div><br>
+            <div>
+            <label id="CustomerLabel" for="Customer">Have you been to our restaurant?</label>
+            <input type="radio" name="answer" value="No"/>No
+            <input type="radio" name="answer" value="Yes"/>Yes
+            </div><br>
+            <div class="checkbox1">
+                <label id="BestContactDays" for="ContactingCustomer">Best day to contact you:</label>
+                <input type="checkbox" name="CustomerContact" value="MTWTF">M  
+                <input type="checkbox" name="CustomerContact" value="MTWTF" style="margin-left:15px">T  
+                <input type="checkbox" name="CustomerContact" value="MTWTF"style="margin-left:15px">W  <input type="checkbox" name="CustomerContact" value="MTWTF" style="margin-left:15px">Th  
+                <input type="checkbox" name="CustomerContact" value="MTWTF" style="margin-left:15px">F
+            </div><br>
+            <div>
+                <input type="submit" id="SendRequest" value="Send Request" style="margin-left:225px">
+            </div><br>
+        </form><hr>
+                <footer>
+                    <p>3253 S. Pitera Dr. Port Orange, FL 32119<br>210-435-7766</p>
+                </footer>
+    </body>
+</html>
+        
