@@ -3,12 +3,20 @@
     <head>
         <title>Menu</title>
         <style>
-            .nav.nav-tabs li {
-                width: 125px;
+            #hr {
+                border: 1px solid black;
+            }
+           .nav.nav-tabs li {
+                color: darkolivegreen;
+                width: 200px;
+                font-weight: bold;
                 font-family: GoodDogRegular;
                 font-size: 18pt;
+            }
+            ul>li>a:visited {
                 color: darkolivegreen;
             }
+            
             ul>li>a:hover {
                 color: firebrick;
             }
@@ -35,13 +43,14 @@
         <link href="restaurantstyles.css"
         rel="stylesheet"
         type="text/css"/>
-        <link href="/Users/macbookpro/Documents/Project/Fonts/GoodDog-fontfacekit (2)/web fonts/gooddog_regular_macroman/stylesheet.css"
+        <link href="/Users/macbookpro/Documents/Project/fonts/GoodDog-fontfacekit (2)/web fonts/gooddog_regular_macroman/stylesheet.css"
         rel="stylesheet"
         type="text/css"/>
         <link href="/Users/macbookpro/Documents/Project/css/bootstrap.min.css"
             rel="stylesheet"
             type="text/css"/>
-        <header style="font-family:GoodDogregular">Papa Pitera's</header><hr>
+        <header style="font-family:GoodDogregular; font-size:30pt; text-align:center; color: darkolivegreen">Papa Pitera's</header>
+        <hr id="hr">
         <div>
             <ul class="nav nav-tabs">
                 <li><a href="RestaurantV5.html"><span class="glyphicon glyphicon-home"></span></a></li>
@@ -49,13 +58,12 @@
                 <li><a href="contactPPPV5.html">Contact Us</a></li>
             </ul>
         </div>
-        <hr>
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-color: darkolivegreen; border: 3px solid black">
             <div class="row">
                 <div class="col-xs-2 col-xs-offset-5 text-center" id="foodgroup">Burgers</div>
             </div>
             <div class="row">
-                <div class="col-xs-4 col-xs-offset-4 text-center"><i>All of our burgers are made from fresh never frozen 100% black angus beef. Burgers are cooked medium unless specified. All burgers are served with fries. Gluten free buns are available for an additional $2.</i></div><br>
+                <div class="col-xs-4 col-xs-offset-4 text-center"><i><p style="color: black">All of our burgers are made from fresh never frozen 100% black angus beef. Burgers are cooked medium unless specified. All burgers are served with fries. Gluten free buns are available for an additional $2.</p></i></div><br>
             </div><br>
             <div class="row" id="fooditems">
                 <div class="col-xs-4 text-center">Pitera Burger</div>
@@ -71,7 +79,7 @@
             <div class="col-xs-2 col-xs-offset-5 text-center" id="foodgroup">Sandwiches</div>
         </div>
         <div class="row">
-            <div class="col-xs-4 col-xs-offset-4 text-center"><i>Our big sandwhiches are designed for the working man! Served with your choice of french fries or kettle chips.</i></div>
+            <div class="col-xs-4 col-xs-offset-4 text-center"><i><p style="color: black">Our big sandwhiches are designed for the working man! Served with your choice of french fries or kettle chips.</p></i></div>
         </div><br>
         <div class="row" id="fooditems">
              <div class="col-xs-4 text-center">Pitera's OG Club</div>
@@ -85,7 +93,7 @@
             </div><br>
         <div class="row">
             <div class="col-xs-2 col-xs-offset-5 text-center" id="foodgroup">Beverages</div>
-        </div>
+        </div><br>
         <div class="row" id="fooditems">
             <div class="col-xs-3 text-center">Root Beer</div>
             <div class="col-xs-3 text-center">Bottled Water</div>
@@ -97,7 +105,7 @@
             <div class="col-xs-3 text-center"><b>$1.25</b></div>
             <div class="col-xs-3 text-center"><b>$1.00</b></div>
             <div class="col-xs-3 text-center"><b>$1.25</b></div>
-        </div>
+        </div><br>
         </div>
         <hr>
         <footer>

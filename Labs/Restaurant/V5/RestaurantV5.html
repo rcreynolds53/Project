@@ -5,19 +5,27 @@
         <style>
             #hr {border: 1px  solid black;}
         .nav-tabs li {
-            width: 125px;
+            width: 200px;
                 font-weight: bold;
                 font-family: GoodDogregular;
                 font-size: 18pt;
                 color:darkolivegreen;
             }
-            ul>li>a:hover {
+             ul>li>a:visited {
+                color: darkolivegreen;
+            }
+             ul>li>a:hover {
                 color: firebrick
             }
             #location {
                 text-align: center;
                 color: darkolivegreen;
                 border: 3px double firebrick;
+            }
+            .border { 
+                outline: 5px double darkolivegreen;
+                margin: 0px 200px 0px 200px;
+                padding: 5px;
             }
             </style>
     </head>
@@ -44,27 +52,19 @@
                 <li><a href="MenuV5.html">Menu</a></li>
                 <li><a href="contactPPPV5.html">Contact Us</a></li>
                 </ul>
-        <div style="background-color: firebrick;">
-        <hr id="hr">
+        <div class="container-fluid" style="background-color: firebrick; border: 3px solid black">
         <p>
             <center>
             <img src="/Users/macbookpro/Documents/Project/Labs/Restaurant/PPP copy.png" style="width: 350px; height: 250px">
             </center>
         </p>
-        <p>
-            <center>
-            <style>
-                .bordered {
-                    width: 300px;
-                    height: 200px;
-                    padding: 20px;
-                    border: 5px double darkolivegreen;
-            }
-            </style>
-            <div class="bordered" align="left" style="color:black"> At Papa Pitera's we strive to provide quality fresh Italian food at a family friendly price.             </div>
-            </center>
-        </p>
-        <hr id="hr">
+        <div class="container-fluid">
+        <div class="border">
+        <div class="row">
+            <div class="col-xs-12 text-center">At Papa Pitera's we strive to provide quality fresh food at a family friendly price. Our goal is to provide you high quality food at reasonable price and give you generous portions! Enjoy!</div>
+        </div>
+        </div><br>
+        </div>
         </div>
        <footer>
            <p align="center">3253 S. Pitera Dr. Port Orange, FL 32119<br>210-435-7766</p>
