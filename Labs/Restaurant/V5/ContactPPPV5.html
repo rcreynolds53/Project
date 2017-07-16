@@ -2,52 +2,16 @@
 <html>
     <head>
         <title>Contact Us</title>
-        <style>
-            #hr {
-                border: 1px solid black;
-            }
-            .nav-tabs li {
-                width: 200px;
-                font-family: GoodDogregular;
-                font-size: 18pt;
-                color: darkolivegreen;
-            }
-            ul>li>a:visited {
-                color:darkolivegreen
-            }
-            ul>li>a:hover {
-                color:firebrick
-            }
-            select {
-                display: inline-block; 
-                width:35%; 
-                font-weight: bold
-                }
-            form {
-                margin-left: 30px
-                }
-            form label {
-                display: inline-block; 
-                width: 155px; 
-                font-weight: bold
-                }
-            textarea {
-                display: inline-block; 
-                width:33%
-                }
-        </style>
+        <script type="text/javascript" src="/Users/macbookpro/Documents/Project/Labs/Restaurant/V5/contactUs.js"></script>
+         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+        <link href="/Users/macbookpro/Documents/Project/Labs/Restaurant/restarauntstyles2.css"
+        rel="stylesheet" type="text/css"/>
+        <link href="/Users/macbookpro/Documents/Project/Fonts/GoodDog-fontfacekit (2)/web fonts/gooddog_regular_macroman/stylesheet.css"
+        rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <link href="restaurantstyles.css"
-        rel="stylesheet"
-        type="text/css"/>
-         <link href="/Users/macbookpro/Documents/Project/Fonts/GoodDog-fontfacekit (2)/web fonts/gooddog_regular_macroman/stylesheet.css"
-        rel="stylesheet"
-        type="text/css"/>
-         <link href="/Users/macbookpro/Documents/Project/css/bootstrap.min.css"
-        rel="stylesheet"
-        type="text/css"/>
-        <header style="font-family:GoodDogregular; font-size:30pt; text-align:center; color: darkolivegreen">Papa Pitera's</header>
+        <header>Papa Pitera's</header>
         <hr id="hr">
         <div>
             <ul class="nav nav-tabs">
@@ -57,30 +21,30 @@
             </ul>
         </div>
          <div class="container-fluid" style="border-top: 3px solid black; border-bottom: 3px solid black"><br>
-             <form class="form-horizontal" action="#" method="POST">
+             <form class="form-horizontal" action="#" method="POST" name="contactForm" onsubmit="return validateForm();">
                  <div class="form-group">
                      <label class="control-label col-xs-2" for="InputName">Name:</label>
                      <div class="input-group col-xs-6 col-xs-offset-3">
-                         <input type="text" class="form-control" id="InputName" placeholder="First Last">
+                         <input type="text" class="form-control" id="inputName" placeholder="First Last">
                      </div>
                  </div>
                  <div class="form-group">
                      <label class="control-label col-xs-2" for="InputEmail">Email:</label>
                      <div class="input-group col-xs-6 col-xs-offset-3">
                          <span class="input-group-addon">@</span>
-                         <input type="text" class="form-control" id="InputEmail">
+                         <input type="text" class="form-control" id="inputEmail">
                      </div>
                      </div>
                 <div class="form-group">
                     <label class="control-label col-xs-2" for="Phone">Phone:</label>
                     <div class="input-group col-xs-6 col-xs-offset-3">
-                        <input type="text" class="form-control" id="InputPhone" placeholder="012-345-6789">
+                        <input type="text" class="form-control" id="inputPhone" placeholder="012-345-6789">
                     </div>
                     </div>
                 <div class="form-group">
                     <label class="control-label col-xs-2" for="ReasonForInquiry">Reason for Inquiry:</label>
                     <div class="input-group col-xs-6 col-xs-offset-3">
-                    <select class="selectpicker show-tick form-control">
+                    <select class="selectpicker show-tick form-control" id="inquiryReason">
                         <option>Catering</option>
                         <option>Private Party</option>
                         <option>Feedback</option>
@@ -91,10 +55,10 @@
                 <div class="form-group">
                     <label class="control-label col-xs-2" for="AdditionalInfo">Additional Information:</label>
                     <div class="input-group col-xs-6 col-xs-offset-3">
-                        <textarea class="form-control" id="AdditionalInfo" type="text" rows="3"></textarea>
+                        <textarea class="form-control" id="additionalInfo" type="text" rows="3"></textarea>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group" id="radios">
                     <label class="control-label col-xs-2" for="Customer">Have you been to our restaurant?</label>
                     <label class="custom-control custom-radio col-xs-offset-1">
                         <input id="radio1" name="radio" type="radio" class="custom-control-input">
@@ -107,26 +71,26 @@
                         <span class="custom-control-description">No</span>
                         </label>
                 </div>
-                <div class="form-group">
+                <div class="form-group" id="contactDay">
                     <label class="control-label col-xs-2" for="ContactDays">Best day to contact you:</label>
                     <label class="checkbox-inline col-xs-1 col-xs-offset-1">
-                    <input type="checkbox" id="inlineCheckbox1" value="option1"> M
+                    <input type="checkbox" id="checkbox1" value="option1"> M
                     </label>
                     <label class="checkbox-inline col-xs-1">
-                    <input type="checkbox" id="inlineCheckbox2" value="option2"> T
+                    <input type="checkbox" id="checkbox2" value="option2"> T
                     </label>
                     <label class="checkbox-inline col-xs-1">
-                    <input type="checkbox" id="inlineCheckbox3" value="option3"> W
+                    <input type="checkbox" id="checkbox3" value="option3"> W
                     </label>
                      <label class="checkbox-inline col-xs-1">
-                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Th
+                    <input type="checkbox" id="checkbox4" value="option4"> Th
                     </label>
                     <label class="checkbox-inline col-cs-1">
-                    <input type="checkbox" id="inlineCheckbox3" value="option3"> F
+                    <input type="checkbox" id="checkbox5" value="option5"> F
                     </label>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary btn-lg col-xs-offset-5" type="button">Send Request</button>
+                    <button class="btn btn-primary btn-lg col-xs-offset-5" id="submitButton" type="submit">Send Request</button>
                 </div>
                 </form>
          </div>

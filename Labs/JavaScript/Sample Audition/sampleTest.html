@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>A Web Page1</title>
+</head>
+
+<script>
+ function myarray() {
+   var starting = +document.getElementById("starting").value,
+     ending = +document.getElementById("ending").value,
+     step = +document.getElementById("step").value,
+     results = document.getElementById("results"),
+     i,
+     array = [];
+
+   for (i = starting; i <= ending; i += step) {
+     i % 2 || array.push(i);
+   }
+   results.innerHTML = array.join(', ');
+ }
+
+</script>
+
+<style media="screen">
+ table {
+   width: 40%;
+ }
+
+ .titles {
+   text-align: right;
+   color: green;
+   font-family: arial;
+   font-weight: bold;
+   padding-bottom: 10px;
+ }
+
+ caption {
+   font-size: 32px;
+   font-weight: bold;
+   font-family: cursive;
+   color: red;
+ }
+
+ .displayevens {
+   text-align: center;
+   padding-top: 10px;
+ }
+</style>
+
+<body>
+ <table>
+   <h1>Sample</h1>
+   <div id="results">
+     <pre><form>
+     Starting Number:<input type="text" align="left" id="starting"><br>
+       Ending Number:<input type="text" align="left" id="ending"><br>
+                Step:<input type="text" align="left" id="step"><br>
+     <button type="button" onclick="myarray()">Display Evens</button></form>
+     <div id="results"></div></pre>
+ </table>
+</body>
+
+</html>
